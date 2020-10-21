@@ -1,9 +1,12 @@
+
+-- выделяем отдельную таблицу для связи 1 ко многим
 create table phones
 (
     employee_id int,
     phone varchar(50)
 );
 
+-- по-хорошему нужно выделять в отдельные таблицы department и postion, чтобы уменьшить размер базы
 create table employees (
 	id SERIAL  PRIMARY KEY,
 	last_name varchar(255),
